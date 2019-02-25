@@ -15,5 +15,5 @@ if [ ! -f /var/tmp/catalyst_init ] ; then
 fi
 
 jupyter notebook -y --no-browser --notebook-dir=${PROJECT_DIR} \
-    --certfile=${SSL_CERT_PEM} --keyfile=${SSL_CERT_KEY} --ip='*' \
+    --certfile=${SSL_CERT_PEM} --keyfile=${SSL_CERT_KEY} --ip=0.0.0.0 \
     --config=${CONFIG_PATH} --allow-root
